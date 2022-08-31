@@ -1,4 +1,4 @@
-package binarysearch
+package main
 
 // Given an array sorted in asc order and a int target
 // search target in array nums, if exist return index, otherwise return -1

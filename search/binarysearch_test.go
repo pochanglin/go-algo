@@ -1,7 +1,6 @@
-package binarysearch_test
+package main
 
 import (
-	"go-algo/binarysearch"
 	"testing"
 )
 
@@ -23,7 +22,7 @@ func TestSearch(t *testing.T) {
 
 	for _, tc := range testCases {
 		t.Run(tc.name, func(t *testing.T) {
-			index := binarysearch.Search(tc.arr, tc.target)
+			index := Search(tc.arr, tc.target)
 
 			if index != tc.expect {
 				t.Errorf("got %d, expect %d", index, tc.expect)
